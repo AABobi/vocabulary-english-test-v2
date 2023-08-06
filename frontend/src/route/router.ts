@@ -1,2 +1,8 @@
 import VocabularyTestPageView from '@/components/VocabularyTestPageView.vue'
-export const routes = [{ path: '/', name: 'Home', component: VocabularyTestPageView }]
+import ExamView from "@/components/ExamView/ExamView.vue";
+import UploadVocabulary from "@/components/AddVocabulary/UploadVocabulary.vue";
+import type {RouteRecordRaw} from "vue-router";
+export const routes: Array<RouteRecordRaw>  = [
+    { path: '/', name: 'ExamHome', component: ExamView },
+    { path: '/add', name: 'Add', component: UploadVocabulary }
+]

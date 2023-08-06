@@ -1,10 +1,8 @@
 <template>
-  <router-view></router-view>
+    <VocabularyTestPageView/>
 </template>
 <script setup lang="ts">
-import { ElButton } from 'element-plus'
-import RouteFirst from '@/components/routeFirst.vue'
-import RouteSec from '@/components/routeSec.vue'
+import VocabularyTestPageView from "@/components/VocabularyTestPageView.vue";
 </script>
 <style scoped lang="scss">
 .App {
